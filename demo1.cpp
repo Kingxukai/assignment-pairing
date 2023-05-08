@@ -2,7 +2,7 @@
 #include<string.h>
 
 enum kind{
-/*ÎÞ¶¨Òå,±êÊ¶·û,ÕûÊý,void,int,float*/UNDEFINED,SYMBOL,INTEGER,VOID,INT,FLOAT, \
+/*æ— å®šä¹‰,æ ‡è¯†ç¬¦,æ•´æ•°,void,int,float*/UNDEFINED,SYMBOL,INTEGER,VOID,INT,FLOAT, \
 /*char,if,else,while,do,for,return*/CHAR,IF,ELSE,WHILE,DO,FOR,RETURN, \
 /*main,+,-,*,/,%*/MAIN,ADD,SUB,MUL,DIV,MOD, \
 /*<,<=,>,>=,==,!=*/LT,LET,GT,GET,EQUAL,NEQUAL, \
@@ -42,7 +42,7 @@ int main()
 	{
 		if(symbol != '=')E_flag=0;
 		
-		//ÅÐ¶Ï×¢ÊÍ 
+		//åˆ¤æ–­æ³¨é‡Š 
 		if(comment_flag == 1)
 		{
 			if(symbol != '/' && symbol != '*')comment_flag = 0;
